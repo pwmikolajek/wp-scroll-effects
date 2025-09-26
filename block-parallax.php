@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Block Parallax v2
- * Plugin URI: https://example.com
- * Description: Enhanced parallax scroll effects with advanced trigger options for WordPress blocks.
+ * Plugin Name: WP Scroll Effects
+ * Plugin URI: https://github.com/pwmikolajek/wp-scroll-effects
+ * Description: Enhanced parallax and scroll effects with advanced animation options for WordPress blocks.
  * Version: 2.0.0
  * Author: Your Name
  * License: GPL v2 or later
