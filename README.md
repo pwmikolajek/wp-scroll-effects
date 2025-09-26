@@ -2,6 +2,8 @@
 
 Enhanced parallax and scroll effects with advanced animation options for WordPress blocks.
 
+https://github.com/user-attachments/assets/94bd11d9-d319-4143-8546-a324abdd6127
+
 ## Features
 
 - **Multiple Animation Types**: Fade in, slide in from various directions, zoom effects, and more
