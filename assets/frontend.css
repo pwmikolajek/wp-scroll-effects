@@ -1,0 +1,69 @@
+/* Base animation setup */
+.parallax-fade-from-left,
+.parallax-fade-from-right,
+.parallax-fade-from-top,
+.parallax-fade-from-bottom,
+.parallax-scale-up,
+.parallax-rotate-in,
+.parallax-slide-up,
+.parallax-bounce-in {
+    --parallax-duration: 800ms;
+    --parallax-delay: 0ms;
+    opacity: 0;
+    transition: opacity var(--parallax-duration) ease-out var(--parallax-delay),
+                transform var(--parallax-duration) ease-out var(--parallax-delay);
+    will-change: opacity, transform;
+}
+
+/* Fade animations with directional movement */
+.parallax-fade-from-left {
+    transform: translateX(-50px);
+}
+
+.parallax-fade-from-right {
+    transform: translateX(50px);
+}
+
+.parallax-fade-from-top {
+    transform: translateY(-50px);
+}
+
+.parallax-fade-from-bottom {
+    transform: translateY(50px);
+}
+
+/* Scale animation */
+.parallax-scale-up {
+    transform: scale(0.8);
+}
+
+/* Rotate animation */
+.parallax-rotate-in {
+    transform: rotate(-10deg) scale(0.9);
+}
+
+/* Slide animation (no fade) */
+.parallax-slide-up {
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+/* Bounce animation with custom easing */
+.parallax-bounce-in {
+    transform: scale(0.3);
+    transition: opacity var(--parallax-duration) ease-out var(--parallax-delay),
+                transform var(--parallax-duration) cubic-bezier(0.175, 0.885, 0.32, 1.275) var(--parallax-delay);
+}
+
+/* Visible states - all animations end at their natural position */
+.parallax-fade-from-left.parallax-visible,
+.parallax-fade-from-right.parallax-visible,
+.parallax-fade-from-top.parallax-visible,
+.parallax-fade-from-bottom.parallax-visible,
+.parallax-scale-up.parallax-visible,
+.parallax-rotate-in.parallax-visible,
+.parallax-slide-up.parallax-visible,
+.parallax-bounce-in.parallax-visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(0) scale(1);
+}
